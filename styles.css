@@ -18,6 +18,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", sans-serif;
   background-image: url(./img/decorative/hero-decore.svg);
@@ -70,10 +73,14 @@ menu {
   z-index: 1;
 }
 
-.main-menu-ul li {
+.main-menu-ul li a:link,
+.main-menu-ul li a:visited {
   cursor: pointer;
+  color: var(--dark-gray);
+  text-decoration: none;
 }
-.main-menu-ul li:hover {
+.main-menu-ul li:hover,
+.main-menu-ul li:active {
   color: var(--light-gray);
 }
 .ul-hidden {
