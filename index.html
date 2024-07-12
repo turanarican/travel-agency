@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo"><img src="./img/Logo.svg" alt="Jadoo Logo" /></div>
+          <menu
+            ><ul class="main-menu-ul ul-hidden">
+              <li>Destinations</li>
+              <li>Hotels</li>
+              <li>Flights</li>
+              <li>Bookings</li>
+              <li>Login</li>
+              <li><a href="#" class="sign-up-btn">Sign up</a></li>
+              <li>
+                <select name="lang" id="lang-select">
+                  <option value="EN">EN</option>
+                  <option value="FR">FR</option>
+                </select>
+              </li>
+            </ul>
+            <button class="hamburger-btn">
+              <img src="./img/hamburger.svg" alt="" />
+            </button>
+            <div class="top-menu-overlay hidden"></div>
+          </menu>
+        </nav>
+        <div class="hero">
+          <div class="hero-text-elements">
+            <h2 class="hero-subtitle">Best Destinations around the world</h2>
+            <h1 class="hero-title">
+              Travel, enjoy and live a new and full life
+            </h1>
+            <p class="hero-p">
+              Built Wicket longer admire do barton vanity itself do in it.
+              Preferred to sportsmen it engrossed listening. Park gate sell they
+              west hard for the.
+            </p>
+            <div class="hero-cta"><a href="#">Learn More</a></div>
+          </div>
+          <div class="hero-img">
+            <img src="./img/decorative/hero-img.png" alt="" />
+          </div>
+        </div>
+      </header>
+      <section class="category not-intersected-right">
+        <h3 class="section-title">Category</h3>
+        <h2 class="section-subtitle">We Offer Best Services</h2>
+        <div class="services">
+          <div class="service">
+            <img src="./img/services/weather.svg" alt="" />
+            <h4>Calculated Weather</h4>
+            <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+          </div>
+          <div class="service">
+            <img src="./img/services/flight.svg" alt="" />
+            <h4>Best Flights</h4>
+            <p>Engrossed listening. Park gate sell they west hard for the.</p>
+          </div>
+          <div class="service">
+            <img src="./img/services/events.svg" alt="" />
+            <h4>Local Events</h4>
+            <p>
+              Barton vanity itself do in it. Preferd to men it engrossed
+              listening.
+            </p>
+          </div>
+          <div class="service">
+            <img src="./img/services/customization.svg" alt="" />
+            <h4>Customization</h4>
+            <p>
+              We deliver outsourced aviation services for military customers
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="top-selling">
+        <h3 class="section-title">Top Selling</h3>
+        <h2 class="section-subtitle">Top Destinations</h2>
+        <!-- TOP DESTINATIONS SLIDER -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="top-destination">
+                <div class="top-destination-content">
+                  <div class="top-destination-img">
+                    <img
+                      src="./img/destinations/rome.jpg"
+                      alt="an image from Rome"
+                    />
+                  </div>
+                  <div class="name-and-price">
+                    <span>Rome, Italy</span><span>$5,42k</span>
+                  </div>
+                  <div class="trip-day-info">
+                    <img src="./img/decorative/trip.svg" alt="" /><span
+                      >10 days trip</span
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="top-destination">
+                <div class="top-destination-content">
+                  <div class="top-destination-img">
+                    <img
+                      src="./img/destinations/london.jpg"
+                      alt="an image from London"
+                    />
+                  </div>
+                  <div class="name-and-price">
+                    <span>London, UK</span><span>$2,42k</span>
+                  </div>
+                  <div class="trip-day-info">
+                    <img src="./img/decorative/trip.svg" alt="" /><span
+                      >3 days trip</span
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="top-destination">
+                <div class="top-destination-content">
+                  <div class="top-destination-img">
+                    <img
+                      src="./img/destinations/lisbon.jpg"
+                      alt="an image from Lisbon"
+                    />
+                  </div>
+                  <div class="name-and-price">
+                    <span>Lisbon, Portugal</span><span>$3,12k</span>
+                  </div>
+                  <div class="trip-day-info">
+                    <img src="./img/decorative/trip.svg" alt="" /><span
+                      >4 days trip</span
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="top-destination">
+                <div class="top-destination-content">
+                  <div class="top-destination-img">
+                    <img
+                      src="./img/destinations/paris.jpg"
+                      alt="an image from Paris"
+                    />
+                  </div>
+                  <div class="name-and-price">
+                    <span>Paris, France</span><span>$1,42k</span>
+                  </div>
+                  <div class="trip-day-info">
+                    <img src="./img/decorative/trip.svg" alt="" /><span
+                      >2 days trip</span
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="top-destination">
+                <div class="top-destination-content">
+                  <div class="top-destination-img">
+                    <img
+                      src="./img/destinations/germany.jpg"
+                      alt="an image from Germany"
+                    />
+                  </div>
+                  <div class="name-and-price">
+                    <span>Germany Tour</span><span>$7,11k</span>
+                  </div>
+                  <div class="trip-day-info">
+                    <img src="./img/decorative/trip.svg" alt="" /><span
+                      >8 days trip</span
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="top-destination">
+                <div class="top-destination-content">
+                  <div class="top-destination-img">
+                    <img
+                      src="./img/destinations/switzerland.jpg"
+                      alt="an image from Switzerland"
+                    />
+                  </div>
+                  <div class="name-and-price">
+                    <span>Switzerland Tour</span><span>$11,11k</span>
+                  </div>
+                  <div class="trip-day-info">
+                    <img src="./img/decorative/trip.svg" alt="" /><span
+                      >10 days trip</span
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <!-- TOP DESTINATIONS SLIDER END -->
+      </section>
+      <section class="features-section not-intersected-right">
+        <div class="features-left">
+          <h3 class="section-title">Easy and Fast</h3>
+          <h2 class="section-subtitle">Book your next trip in 3 easy steps</h2>
+          <div class="feature">
+            <div class="feature-icon">
+              <img src="./img/decorative/features/destination.svg" alt="" />
+            </div>
+            <div class="feature-text">
+              <h4>Choose Destination</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <img src="./img/decorative/features/payment.svg" alt="" />
+            </div>
+            <div class="feature-text">
+              <h4>Make Payment</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <img src="./img/decorative/features/airport.svg" alt="" />
+            </div>
+            <div class="feature-text">
+              <h4>Reach Airport on Selected Date</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="features-right">
+          <div class="trip-card">
+            <div class="trip-card-img">
+              <img
+                src="./img/destinations/greece.jpg"
+                alt="an image from Greece"
+                class="trip-img"
+              />
+            </div>
+            <h4>Trip to Greece</h4>
+            <p>14-29 June | by Robbin Joseph</p>
+            <div class="trip-card-icons">
+              <div class="trip-card-icon">
+                <img src="./img/decorative/trip-card/leaf.svg" alt="" />
+              </div>
+              <div class="trip-card-icon">
+                <img src="./img/decorative/trip-card/map.svg" alt="" />
+              </div>
+              <div class="trip-card-icon">
+                <img src="./img/decorative/trip-card/direction.svg" alt="" />
+              </div>
+            </div>
+            <div class="people-going-like">
+              <div class="people-going">
+                <img src="./img/decorative/trip-card/person-going.svg" alt="" />
+                <p>24 people going</p>
+              </div>
+              <img src="./img/decorative/trip-card/heart.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials-section not-intersected-left">
+        <h3 class="section-title">Testimonials</h3>
+        <h2 class="section-subtitle">What People Say About Us.</h2>
+        <div class="testimonials">
+          <div class="testimonial">
+            <img src="./img/avatars/avatar-1.jpg" alt="Mike Tylor" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              quidem, similique ipsum natus id commodi sint aperiam est esse eum
+              facere neque consequuntur, assumenda officia.
+            </p>
+            <address>
+              <h5>Mike Tylor</h5>
+              <span>Lahore, Pakistan</span>
+            </address>
+          </div>
+          <div class="testimonial">
+            <img src="./img/avatars/avatar-2.jpg" alt="Jessie Seram" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              quidem, similique ipsum natus id commodi sint aperiam est esse eum
+              facere neque consequuntur, assumenda officia.
+            </p>
+            <address>
+              <h5>Jessie Seram</h5>
+              <span>Traveler, USA</span>
+            </address>
+          </div>
+          <div class="testimonial">
+            <img src="./img/avatars/avatar-3.jpg" alt="Smith Kane" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              quidem, similique ipsum natus id commodi sint aperiam est esse eum
+              facere neque consequuntur, assumenda officia.
+            </p>
+            <address>
+              <h5>Smith Kane</h5>
+              <span>Athens, Greece</span>
+            </address>
+          </div>
+        </div>
+      </section>
+      <section class="brands not-intersected-right">
+        <figure class="brand">
+          <img src="./img/brands/axon.svg" alt="Axon Logo" />
+        </figure>
+        <figure class="brand">
+          <img src="./img/brands/jetstar.svg" alt="JetStar Logo" />
+        </figure>
+        <figure class="brand">
+          <img src="./img/brands/expedia.svg" alt="Expedia Logo" />
+        </figure>
+        <figure class="brand">
+          <img src="./img/brands/qantas.svg" alt="Qantas Logo" />
+        </figure>
+        <figure class="brand">
+          <img src="./img/brands/alitalia.svg" alt="Alitalia Logo" />
+        </figure>
+      </section>
+      <section class="newsletter-section not-intersected-left">
+        <article class="newsletter-container">
+          <img src="./img/decorative/newsletter-icon.svg" alt="" />
+          <h3>
+            Subscribe to get information, latest news and other interesting
+            offers about Jadoo
+          </h3>
+          <form action="#" class="newsletter-form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your E-mail"
+            />
+            <input type="submit" id="subscribe-submit" value="Subscribe" />
+          </form>
+        </article>
+      </section>
+      <footer>
+        <div class="footer-column">
+          <img src="./img/footer-logo.svg" alt="Jadoo Logo" />
+          <p>Book your trip in minute, get full Control for much longer.</p>
+        </div>
+        <div class="footer-column">
+          <h5>Company</h5>
+          <ul class="footer-ul">
+            <li>About</li>
+            <li>Careers</li>
+            <li>Mobile</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h5>Contact</h5>
+          <ul class="footer-ul">
+            <li>Help/FAQ</li>
+            <li>Press</li>
+            <li>Affiliates</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h5>More</h5>
+          <ul class="footer-ul">
+            <li>Airline Fess</li>
+            <li>Airlines</li>
+            <li>Low Fare Tips</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <div class="social-and-app">
+            <i class="social-icon fb-icon bx bxl-facebook-circle"></i>
+            <i class="social-icon ig-icon bx bxl-instagram-alt"></i>
+            <i class="social-icon tw-icon bx bxl-twitter"></i>
+            <span>Get Our App On;</span>
+            <i class="store-icon pl-icon bx bxl-play-store"></i>
+            <i class="store-icon ap-icon bx bxl-apple"></i>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
