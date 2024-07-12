@@ -72,16 +72,16 @@ menu {
   gap: 4vw;
   z-index: 1;
 }
-
-.main-menu-ul li a:link,
-.main-menu-ul li a:visited {
+.main-menu-ul li {
   cursor: pointer;
-  color: var(--dark-gray);
-  text-decoration: none;
 }
-.main-menu-ul li:hover,
-.main-menu-ul li:active {
+.main-menu-ul li:hover {
   color: var(--light-gray);
+}
+.hash-link:link,
+.hash-link:visited {
+  text-decoration: none;
+  color: inherit;
 }
 .ul-hidden {
   display: flex;
