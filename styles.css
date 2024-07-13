@@ -695,6 +695,9 @@ footer {
   }
 }
 @media screen and (max-width: 460px) {
+  .container {
+    width: 96%;
+  }
   .hero-title {
     font-size: 2.25rem;
   }
@@ -734,7 +737,6 @@ footer {
     padding: 0;
     color: #fff;
     cursor: pointer;
-    margin-right: 0.6rem;
   }
   button.hamburger-btn img {
     height: 2.4rem;
