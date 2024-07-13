@@ -11,13 +11,11 @@ const sections = document.querySelectorAll("section");
   });
 });
 
-const createIntersectionObserver = (el, i) => {
+const createIntersectionObserver = (el) => {
   let intersectedCallback = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        console.log(entry.target, i);
-        if (i % 2 === 0) entry.target.classList.remove("not-intersected-right");
-        else entry.target.classList.remove("not-intersected-left");
+        entry.target.classList.remove("not-intersected");
         entry.target.classList.add("intersected");
       }
     });

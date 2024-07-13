@@ -766,16 +766,12 @@ footer {
 /* SCROLL ANIMATIONS    */
 /************************/
 
-.not-intersected-right {
-  transform: translateX(10rem);
-  opacity: 0.4;
-}
-.not-intersected-left {
-  transform: translateX(-10rem);
-  opacity: 0.4;
+.not-intersected {
+  transform: translateY(6rem);
+  opacity: 0.28;
 }
 .intersected {
-  transform: translateX(0) !important;
+  transform: translateY(0) !important;
   opacity: 1;
   transition: all 0.9s;
 }
